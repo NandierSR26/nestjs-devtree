@@ -1,10 +1,8 @@
 import express from 'express'
+import router from './router'
 
 const app = express()
 
-// Routing
-app.get('/', (req, res) => {
-  res.send('Hola mundo en express / typescript')
-})
+app.use('/', router)
 
 export default app
